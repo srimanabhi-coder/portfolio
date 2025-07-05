@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import '../styles/components/Contact.css';
 
 const Contact = () => {
-  const handleSubmit = () => {
-    console.log("Form submitted");
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = (e) => {
+    console.log(form);
   }
   return (
     <section id="contact" className="contact">
@@ -32,7 +41,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <form className="contact-form">
+          {/* <form className="contact-form">
             <div className="form-group">
               <input type="text" placeholder="Your Name" required />
             </div>
@@ -46,7 +55,7 @@ const Contact = () => {
               <textarea placeholder="Your Message" rows="5" required></textarea>
             </div>
             <button type="submit" className="btn btn-primary" style={{cursor: "pointer", color: "white", backgroundColor: "#007bff"}} onClick={handleSubmit}>Send Message</button>
-          </form>
+          </form> */}
         </div>
       </div>
     </section>
