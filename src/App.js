@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './App.css';
+import './styles/globals.css';
+import './styles/utils/responsive.css';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';

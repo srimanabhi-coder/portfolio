@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaDownload } from 'react-icons/fa';
 import dp from '../assets/images/dp.jpg';
 import resume from '../assets/pdfs/resume.pdf';
+import '../styles/components/Hero.css';
 
 const Hero = ({ scrollToSection }) => {
     const handleDownload = () => {
@@ -14,7 +15,7 @@ const Hero = ({ scrollToSection }) => {
   return (
     <section id="home" className="hero">
       <div className="hero-container">
-        <div className="hero-content">
+        <div className="hero-content fade-in-up">
           <h1 className="hero-title">
             Hi, I'm <span className="highlight">Abhishek Srivastava</span>
           </h1>
@@ -31,7 +32,7 @@ const Hero = ({ scrollToSection }) => {
             </button>
           </div>
         </div>
-        <div className="hero-image">
+        <div className="hero-image fade-in-up">
           <div className="profile-card">
             <img src={dp} alt="Profile" className="profile-img" />
             <div className="social-links">

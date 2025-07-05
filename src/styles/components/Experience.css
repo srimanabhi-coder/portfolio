@@ -1,0 +1,118 @@
+/* Experience Section Styles */
+.experience {
+  padding: 5rem 0;
+}
+
+.experience .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.3);
+}
+
+.timeline-content {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: none;
+}
+
+.timeline-content h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.period {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.timeline-content p {
+  margin: 1rem 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.experience-item {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.experience-item:before {
+  content: '';
+  position: absolute;
+  left: 0.4rem;
+  top: 0.6rem;
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border-radius: 50%;
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+} 

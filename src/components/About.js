@@ -1,11 +1,12 @@
 import React from 'react';
+import '../styles/components/About.css';
 
 const About = () => {
   return (
     <section id="about" className="about">
       <div className="container">
         <h2 className="section-title">About Me</h2>
-        <div className="about-content">
+        <div className="about-content fade-in-up">
           <div className="about-text">
             <p>
             I’m a passionate Full Stack Developer with 2+ years of experience building scalable web and mobile applications. I enjoy solving real-world problems through clean code and intuitive user experiences.

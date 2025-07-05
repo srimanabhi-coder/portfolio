@@ -1,29 +1,33 @@
+import PokeMon from "../assets/images/pokemon.jpg"
+import Recipe from "../assets/images/recipe.jpg"
+import Calculator from "../assets/images/calculator.png"
+
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
-    github: "https://github.com/username/ecommerce-platform",
-    live: "https://ecommerce-demo.com",
-    image: "/api/placeholder/400/250"
+    title: "PokeMon App",
+    description: "A PokeMon App built with React, HTML, CSS, and JavaScript. It allows users to search for Pokemons and view their details.",
+    technologies: ["React", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/srimanabhi-coder/PokeMon-App",
+    live: "https://melodic-bombolone-a9ac3f.netlify.app/",
+    image: PokeMon
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "Collaborative task management application with real-time updates using Socket.io. Built with React, Express, and PostgreSQL.",
-    technologies: ["React", "Express", "PostgreSQL", "Socket.io", "Redux"],
-    github: "https://github.com/username/task-manager",
-    live: "https://taskmanager-demo.com",
-    image: "/api/placeholder/400/250"
+    title: "Recipe App",
+    description: "Created a visually engaging recipe search app using React.js and TheMealDB API to fetch and display meal details. Integrated a search by name feature, displaying thumbnails, instructions, and ingredient info with smooth transitions.",
+    technologies: ["React", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/srimanabhi-coder/Recipe-App",
+    live: "https://delightful-travesseiro-f5c834.netlify.app/",
+    image: Recipe
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "Weather application with location-based forecasts, interactive maps, and data visualization. Built with React and Python backend.",
-    technologies: ["React", "Python", "FastAPI", "Chart.js", "OpenWeatherAPI"],
-    github: "https://github.com/username/weather-dashboard",
-    live: "https://weather-demo.com",
-    image: "/api/placeholder/400/250"
+    title: "Calculator and Clock",
+    description: " Developed a fully responsive scientific calculator with real-time digital clock using vanilla JavaScript and HTML/CSS. Handled input operations, clear/reset logic, and expression evaluation without using external libraries",
+    technologies: ["React", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/srimanabhi-coder/Calc-and-Clock",
+    live: "https://tranquil-sunshine-40203c.netlify.app/",
+    image: Calculator
   }
 ]; 

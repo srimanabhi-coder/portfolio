@@ -6,7 +6,6 @@ export const skills = [
   { name: 'Python', icon: SiPython, level: 88 },
   { name: 'JavaScript', icon: SiJavascript, level: 92 },
   { name: 'TypeScript', icon: SiTypescript, level: 85 },
-  { name: 'PostgreSQL', icon: SiPostgresql, level: 82 },
   { name: 'Docker', icon: SiDocker, level: 75 },
   { name: 'Git', icon: SiGit, level: 90 }
 ]; 

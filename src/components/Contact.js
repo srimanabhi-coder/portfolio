@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import '../styles/components/Contact.css';
 
 const Contact = () => {
   const handleSubmit = () => {
@@ -9,7 +10,7 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="container">
         <h2 className="section-title">Get In Touch</h2>
-        <div className="contact-content">
+        <div className="contact-content fade-in-up">
           <div className="contact-info">
             <h3>Let's work together!</h3>
             <p>

@@ -1,13 +1,14 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { projects } from '../data/projects';
+import '../styles/components/Projects.css';
 
 const Projects = () => {
   return (
     <section id="projects" className="projects">
       <div className="container">
         <h2 className="section-title">Featured Projects</h2>
-        <div className="projects-grid">
+        <div className="projects-grid fade-in-up">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
               <div className="project-image">
