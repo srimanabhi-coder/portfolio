@@ -1,187 +1,76 @@
-# Full Stack Developer Portfolio
+# 🚀 Abhishek Srivastava — Developer Portfolio
 
-A modern, responsive portfolio website built with React.js, showcasing the skills, projects, and experience of a full stack developer.
+A fast, responsive personal portfolio built with **React.js** — showcasing 3.5+ years of full stack development experience across fintech products.
 
-## Features
-
-- **Modern Design**: Clean, professional layout with smooth animations and transitions
-- **Responsive**: Fully responsive design that works on all devices
-- **Interactive Navigation**: Smooth scrolling navigation with active section highlighting
-- **Skills Showcase**: Visual skill bars with technology icons
-- **Project Gallery**: Interactive project cards with hover effects
-- **Experience Timeline**: Professional timeline layout for work experience
-- **Contact Form**: Functional contact form with modern styling
-- **Social Links**: Integrated social media links
-- **Performance Optimized**: Fast loading with optimized animations
-
-## Sections
-
-1. **Hero Section**: Introduction with profile image and call-to-action buttons
-2. **About**: Personal information and key statistics
-3. **Skills**: Technical skills with visual progress indicators
-4. **Projects**: Featured projects with live demos and source code links
-5. **Experience**: Professional experience in timeline format
-6. **Contact**: Contact information and message form
-
-## Technologies Used
-
-- **Frontend**: React.js, CSS3, HTML5
-- **Icons**: React Icons (Font Awesome, Simple Icons)
-- **Styling**: Custom CSS with modern techniques (Grid, Flexbox, Animations)
-- **Responsive Design**: Mobile-first approach with media queries
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd portfolio
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm start
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## Customization
-
-### Personal Information
-
-Update the following in `src/App.js`:
-
-- **Name**: Change "John Doe" to your name
-- **Profile Image**: Replace the placeholder image URL with your photo
-- **Contact Information**: Update email, phone, and location
-- **Social Links**: Add your GitHub, LinkedIn, and Twitter profiles
-
-### Skills
-
-Modify the `skills` array in `src/App.js` to reflect your technical skills:
-
-```javascript
-const skills = [
-  { name: 'Your Skill', icon: YourIcon, level: 90 },
-  // Add more skills...
-];
-```
-
-### Projects
-
-Update the `projects` array with your own projects:
-
-```javascript
-const projects = [
-  {
-    id: 1,
-    title: "Your Project Title",
-    description: "Project description...",
-    technologies: ["Tech1", "Tech2", "Tech3"],
-    github: "https://github.com/yourusername/project",
-    live: "https://your-project-demo.com",
-    image: "/path/to/your/image.jpg"
-  },
-  // Add more projects...
-];
-```
-
-### Experience
-
-Modify the `experiences` array to reflect your work history:
-
-```javascript
-const experiences = [
-  {
-    id: 1,
-    title: "Your Job Title",
-    company: "Company Name",
-    period: "Start Date - End Date",
-    description: "Job description...",
-    technologies: ["Tech1", "Tech2", "Tech3"]
-  },
-  // Add more experiences...
-];
-```
-
-### Styling
-
-Customize the appearance by modifying `src/App.css`:
-
-- **Colors**: Update the gradient colors and theme colors
-- **Fonts**: Change font families and sizes
-- **Animations**: Adjust animation durations and effects
-- **Layout**: Modify spacing, sizing, and responsive breakpoints
-
-## Available Scripts
-
-- `npm start` - Runs the app in development mode
-- `npm test` - Launches the test runner
-- `npm run build` - Builds the app for production
-- `npm run eject` - Ejects from Create React App (one-way operation)
-
-## Deployment
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-This creates an optimized build in the `build` folder ready for deployment.
-
-### Deployment Options
-
-- **Netlify**: Drag and drop the build folder
-- **Vercel**: Connect your GitHub repository
-- **GitHub Pages**: Use gh-pages package
-- **Firebase Hosting**: Use Firebase CLI
-
-## Performance Tips
-
-- Optimize images before adding them to the project
-- Use WebP format for better compression
-- Implement lazy loading for images
-- Minimize CSS and JavaScript in production builds
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Contact
-
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio)
+🌐 **Live Site**: [View Portfolio](https://srimanabhi-coder.github.io/portfolio) *(update with your actual deployed URL)*  
+💼 **LinkedIn**: [linkedin.com/in/abhishek-srivastava-268509200](https://linkedin.com/in/abhishek-srivastava-268509200)  
+📧 **Email**: abhisheksrivastava0861@gmail.com
 
 ---
 
-**Note**: Remember to replace placeholder content with your actual information and projects!
+## ✨ What's Inside
+
+| Section | Description |
+|---|---|
+| **Hero** | Introduction, role, and quick CTAs |
+| **About** | Background, experience summary, key stats |
+| **Skills** | Tech stack with visual indicators |
+| **Projects** | Featured work with live demos & source links |
+| **Experience** | Professional timeline at Kosh (fintech) |
+| **Contact** | Direct contact form and social links |
+
+---
+
+## 🛠 Built With
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+---
+
+## ⚡ Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/srimanabhi-coder/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it locally.
+
+---
+
+## 📦 Build & Deploy
+
+```bash
+# Create production build
+npm run build
+```
+
+Deploy easily on **Vercel**, **Netlify**, or **GitHub Pages** — just connect the repo and you're live.
+
+---
+
+## 👨‍💻 About Me
+
+Full Stack Developer with 3.5+ years building production-grade web and mobile applications.  
+Currently at **Kosh** (fintech, Gurugram) — working across React.js, React Native, Django, and Python.
+
+Some things I've shipped:
+- 🔹 Real-time in-app chat system → **25% increase in user engagement**
+- 🔹 WhatsApp EMI reminder engine → **80% improvement in loan collections**
+- 🔹 Reusable React.js component library → **30% faster feature delivery**
+
+---
+
+## 📄 License
+
+Open source under the [MIT License](LICENSE).
