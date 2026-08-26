@@ -1,31 +1,30 @@
-/* Footer Styles */
 .footer {
-  background: #333;
-  color: white;
-  padding: 2rem 0;
-  text-align: center;
+  background: #0c1b18;
+  color: var(--hero-muted);
+  padding: 28px 0;
+  border-top: 1px solid rgba(244, 239, 230, 0.08);
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  gap: 16px;
 }
 
 .footer-social {
   display: flex;
-  gap: 1rem;
+  gap: 14px;
 }
 
 .footer-social a {
-  color: white;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+  color: var(--hero-ink);
+  font-size: 1.15rem;
 }
 
-.footer-social a:hover {
-  color: #667eea;
-} 
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

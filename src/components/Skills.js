@@ -1,32 +1,39 @@
 import React from 'react';
-import { skills } from '../data/skills';
+import { domains } from '../data/profile';
+import { skillGroups } from '../data/skills';
 import '../styles/components/Skills.css';
 
 const Skills = () => {
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <h2 className="section-title">Skills & Technologies</h2>
-        <div className="skills-grid fade-in-up">
-          {skills.map((skill, index) => (
-            <div key={index} className="skill-card">
-              <div className="skill-icon">
-                <skill.icon />
-              </div>
-              <h3>{skill.name}</h3>
-              <div className="skill-bar">
-                <div 
-                  className="skill-progress" 
-                  style={{ width: `${skill.level}%` }}
-                ></div>
-              </div>
-              <span className="skill-level">{skill.level}%</span>
-            </div>
+        <div className="section-heading">
+          <p className="eyebrow">Skills</p>
+          <h2>Stack I use in production</h2>
+        </div>
+        <div className="skills-grid">
+          {skillGroups.map((group) => (
+            <article key={group.id} className="skill-group">
+              <h3>{group.title}</h3>
+              <ul className="chip-row">
+                {group.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
           ))}
+        </div>
+        <div className="domain-block">
+          <h3>Domain</h3>
+          <ul className="chip-row">
+            {domains.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
   );
 };
 
-export default Skills; 
+export default Skills;

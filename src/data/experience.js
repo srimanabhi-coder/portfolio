@@ -1,36 +1,52 @@
 export const experiences = [
   {
     id: 1,
-    title: "Full Stack Developer",
-    company: "Adhikosh Financial Advisory Pvt. Ltd.",
-    period: "Nov 2022 - Present",
-    description: [
-      "Engineered intuitive user interfaces using React.js, HTML5, CSS3, and JavaScript, partnering with cross-functional design and development teams to deliver seamless UI/UX experiences",
-      
-      "Architected responsive and modular component libraries with reusable design systems, significantly improving code maintainability and application scalability",
-      
-      "Developed and integrated real-time chat functionality using Realm and Gifted Chat, boosting user engagement and enabling seamless in-app communication",
-      
-      "Implemented dynamic chat action rendering driven by backend logic, enhancing chat interface interactivity and responsiveness",
-      
-      "Integrated Google reCAPTCHA authentication with login forms, ensuring robust security and bot-resistant user verification",
-      
-      "Designed sophisticated multi-contact selector UI with live validation components, improving form usability and maintaining UX consistency across all devices",
-      
-      "Built innovative live group location sharing feature similar to WhatsApp using React Native, providing real-time location updates for multiple users in interactive map views",
-      
-      "Developed mobile-first responsive layouts with comprehensive cross-browser compatibility, ensuring uniform rendering and optimal performance across all devices",
-      
-      "Integrated TeleCMI APIs into administrative dashboards, enabling real-time calling capabilities and streamlining user-agent communication workflows",
-      
-      "Engineered backend logic for automated WhatsApp EMI reminder system, significantly increasing on-time payment rates through targeted notifications",
-      
-      "Implemented recovery team contact management system for borrowers with pending EMIs, resulting in an impressive 80% increase in successful debt collection rates",
-      
-      "Designed and developed comprehensive customer information dashboard for loan underwriting teams, aggregating complex user data into clear, actionable insights for faster decision-making",
-      
-      "Built robust data validation logic for file upload systems, ensuring data integrity and compliance with financial regulations"
+    title: 'Frontend Developer',
+    company: 'KOSH',
+    companyLegal: 'Fintech · YC W20',
+    location: 'Gurugram, India',
+    period: 'Nov 2022 – Present',
+    tracks: [
+      {
+        id: 'web',
+        label: 'Web · React.js',
+        items: [
+          'Architected a multi-tenant React dashboard (4+ tenants) with hostname-based routing across Auth, Chat, CDP, LOS, LMS, and Payments from a single codebase.',
+          'Improved application load performance through lazy loading and code splitting across the multi-tenant dashboard, reducing initial bundle size and improving time-to-interactive.',
+          'Built and evolved a real-time operations chat system using MQTT over SharedWorker, Firebase Cloud Messaging, and IndexedDB with offline-first sync — eliminating cross-tab message loss.',
+          'Shipped the core lending workspace (LOS/LMS) — credit profiles, EMI/salary views, JWT-secured disbursal approval gates, and high-performance loan queue filtering — used daily by credit and operations teams.',
+          'Owned end-to-end collections and repayment workflows and built a unified Customer 360 + CRM workspace for credit and recovery teams.',
+          'Mentored junior engineers on frontend architecture and coding best practices, and conducted code reviews to uphold quality across the team.',
+        ],
+      },
+      {
+        id: 'mobile',
+        label: 'Mobile · React Native',
+        items: [
+          'Led development of a production React Native 0.84 app covering the full loan lifecycle (origination, KYC, approval, disbursal, EMI repayment), integrating Sentry, Crashlytics, and Amplitude to maintain a 99.5% crash-free session rate.',
+          'Implemented regulated KYC & compliance integrations — DigiLocker Aadhaar/PAN fetch, CKYC OTP verification, Account Aggregator consent flows — wired into backend CDP/LOS systems.',
+          'Managed production mobile release operations — CodePush OTA updates, white-label multi-tenant branding, and Play Store versioning — across 4+ lending brands.',
+          'Scaled a customer-facing React Native app to 100k+ downloads and a 4.5-star Play Store rating through continuous performance and UX improvements.',
+          'Enhanced Gifted-Chat with multimedia sharing, live location, URL previews, user mentions, and message pinning, driving a 50% increase in user engagement.',
+        ],
+      },
     ],
-    technologies: ["React.js", "React Native", "Django", "JavaScript", "HTML5", "CSS3", "Realm", "Gifted Chat", "Google reCAPTCHA", "TeleCMI APIs", "WhatsApp API", "Git", "Docker"]
+    technologies: [
+      'React.js',
+      'TypeScript',
+      'React Native',
+      'Redux',
+      'TanStack Query',
+      'MQTT',
+      'SharedWorker',
+      'IndexedDB',
+      'FCM',
+      'Realm',
+      'MMKV',
+      'CodePush',
+      'Sentry',
+      'JWT',
+      'RBAC',
+    ],
   },
-]; 
+];

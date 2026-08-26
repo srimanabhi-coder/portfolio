@@ -1,11 +1,55 @@
-import { SiReact, SiNodedotjs, SiPython, SiJavascript, SiTypescript, SiMongodb, SiPostgresql, SiDocker, SiGit } from 'react-icons/si';
-
-export const skills = [
-  { name: 'React', icon: SiReact, level: 90 },
-  { name: 'React Native', icon: SiReact, level: 90 },
-  { name: 'Python', icon: SiPython, level: 88 },
-  { name: 'JavaScript', icon: SiJavascript, level: 92 },
-  { name: 'TypeScript', icon: SiTypescript, level: 85 },
-  { name: 'Docker', icon: SiDocker, level: 75 },
-  { name: 'Git', icon: SiGit, level: 90 }
-]; 
+export const skillGroups = [
+  {
+    id: 'frontend',
+    title: 'Frontend',
+    items: [
+      'React.js',
+      'TypeScript',
+      'JavaScript (ES6+)',
+      'Redux',
+      'Context API',
+      'TanStack Query',
+      'Tailwind CSS',
+      'HTML5 / CSS3',
+      'Vite',
+    ],
+  },
+  {
+    id: 'mobile',
+    title: 'Mobile',
+    items: [
+      'React Native',
+      'Realm',
+      'MMKV',
+      'Firebase Cloud Messaging',
+      'Deep linking',
+      'CodePush',
+      'Sentry',
+      'Crashlytics',
+      'Amplitude',
+    ],
+  },
+  {
+    id: 'backend',
+    title: 'Backend & data',
+    items: [
+      'REST APIs',
+      'GraphQL',
+      'JWT auth',
+      'Role-based access control',
+      'MQTT',
+      'Python & Django (basics)',
+    ],
+  },
+  {
+    id: 'practice',
+    title: 'Tools & practice',
+    items: [
+      'Git / GitHub',
+      'Agile / Scrum',
+      'Code reviews',
+      'Performance optimization',
+      'AI-assisted development',
+    ],
+  },
+];

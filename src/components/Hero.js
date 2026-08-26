@@ -1,48 +1,50 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa';
 import dp from '../assets/images/dp.jpg';
-import resume from '../assets/pdfs/resume.pdf';
+import Abhishek_Srivastava_Resume from '../assets/pdfs/Abhishek_Srivastava_Resume.pdf';
+import { profile } from '../data/profile';
 import '../styles/components/Hero.css';
 
 const Hero = ({ scrollToSection }) => {
-    const handleDownload = () => {
-        const fileUrl = resume;
-        const link = document.createElement('a');
-        link.href = fileUrl;
-        link.download = 'resume.pdf';
-        link.click();
-    }
   return (
     <section id="home" className="hero">
+      <div className="hero-grid" aria-hidden="true" />
       <div className="hero-container">
-        <div className="hero-content fade-in-up">
-          <h1 className="hero-title">
-            Hi, I'm <span className="highlight">Abhishek Srivastava</span>
-          </h1>
-          <h2 className="hero-subtitle">Full Stack Developer</h2>
-          <p className="hero-description">
-          I'm a Full Stack Developer specializing in building efficient, scalable web and mobile applications. I have experience working with React.js, React Native, and Django, and enjoy solving real-world problems through clean, maintainable code.
+        <div className="hero-copy">
+          <p className="hero-kicker">
+            {profile.company} · {profile.companyMeta} · {profile.location}
           </p>
-          <div className="hero-buttons">
-            <button className="btn btn-primary" onClick={() => scrollToSection('projects')}>
-              View My Work
+          <h1 className="hero-title">
+            {profile.name}
+          </h1>
+          <p className="hero-role">{profile.title}</p>
+          <p className="hero-description">{profile.heroLead}</p>
+          <div className="hero-actions">
+            <button type="button" className="btn btn-solid" onClick={() => scrollToSection('work')}>
+              Selected work
             </button>
-            <button className="btn btn-secondary" onClick={handleDownload}>
-              <FaDownload className="download-icon" /> Download Resume
+            <a className="btn btn-ghost" href={Abhishek_Srivastava_Resume} download="Abhishek-Srivastava-Resume.pdf">
+              Download resume
+            </a>
+          </div>
+          <div className="hero-meta">
+            <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <FaGithub />
+              <span>GitHub</span>
+            </a>
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FaLinkedin />
+              <span>LinkedIn</span>
+            </a>
+            <button type="button" className="hero-scroll" onClick={() => scrollToSection('about')}>
+              <FaArrowDown />
+              <span>About</span>
             </button>
           </div>
         </div>
-        <div className="hero-image fade-in-up">
-          <div className="profile-card">
-            <img src={dp} alt="Profile" className="profile-img" />
-            <div className="social-links">
-              <a href="https://github.com/srimanabhi-coder/" target="_blank" rel="noopener noreferrer">
-                <FaGithub />
-              </a>
-              <a href="https://www.linkedin.com/in/abhishek-srivastava-268509200/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin />
-              </a>
-            </div>
+        <div className="hero-portrait">
+          <div className="portrait-frame">
+            <img src={dp} alt={`${profile.name}, ${profile.title}`} loading="lazy" objectFit="cover" width="480" height="600" />
           </div>
         </div>
       </div>
@@ -50,4 +52,4 @@ const Hero = ({ scrollToSection }) => {
   );
 };
 
-export default Hero; 
+export default Hero;
